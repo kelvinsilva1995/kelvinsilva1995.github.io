@@ -1,198 +1,511 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Kelvin Rafael da Silva</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/components/main-title.css">
-    <link rel="stylesheet" href="css/components/main-subtitle.css">
-    <link rel="stylesheet" href="css/components/main-box.css">
-    <link rel="stylesheet" href="css/components/main-button.css">
-    <link rel="stylesheet" href="css/components/main-action.css">
-    <link rel="stylesheet" href="css/components/main-header.css">
-    <link rel="stylesheet" href="css/components/main-banner.css">
-    <link rel="stylesheet" href="css/components/main-section.css">
-    <link rel="stylesheet" href="css/components/skill-tec.css">
-    <link rel="stylesheet" href="css/components/progress-bar.css">
-    <link rel="stylesheet" href="css/components/wrapper-skill.css">
-    <link rel="stylesheet" href="css/components/card-project.css">
-    <link rel="stylesheet" href="css/components/wrapper-card.css">
-    <link rel="stylesheet" href="css/components/main-description.css">
-    <link rel="stylesheet" href="css/components/button-arrow.css">
-    <link rel="stylesheet" href="css/components/node-card.css">
-    <link rel="stylesheet" href="css/components/main-carousel.css">
-    <link rel="stylesheet" href="css/components/main-footer.css">
-    <link rel="stylesheet" href="css/components/main-form.css">
-    <link rel="stylesheet" href="css/components/main-label.css">
-    <link rel="stylesheet" href="css/components/main-input.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portifolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-    <header class="main-header">
-        <img height="60px" width="60px" src="assets/img/kelvin.svg" alt="Logo">
 
-        <nav>
-            <a class="main-action" href="" lang="en">Skills</a>
-            <a class="main-action" href="">Projetos</a>
-            <a class="main-action" href="">Sobre</a>
-            <a class="main-action" href="">Contatos</a>
-            <a class="main-button" href="" lang="en">Download CV</a>
-        </nav>
-    </header>
-    <section class="main-banner">
-        <div class="wrapper">
-            <div class="main-box">
-                <h2 class="main-title">Kelvin Rafael</h1>
-                    <h3 class="main-subtitle">Analista de Testes Automatizados
-                </h2>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Kelvin Rafael da Silva</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Kelvin Rafael da Silva</h1>
+      <p><span class="typed" data-typed-items="Eu sou Analista de Testes Senior, Eu fui Analista de Suporte, Eu fui Assistente de Infra"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Atualmente, atuo como Analista de Testes Automatizados na
+            empresa Texoit, onde tenho desempenhado um papel fundamental.
+            Minha trajetória profissional abrange diversas áreas de TI,
+            desde a função de almoxarife até o início na área de
+            infraestrutura em TI. Uma das coisas que mais me atrai nesse
+            campo é a capacidade de explorar novos caminhos à medida que os
+            percorro. Estou constantemente em busca de aprimorar meu
+            conhecimento em stacks de testes automatizados, seja por meio do
+            trabalho ou dedicando meu tempo livre aos estudos. Minha paixão
+            por adquirir conhecimento é uma característica que me impulsiona
+            e me mantém motivado(a).</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Analista De Teste Senior.</h3>
+            <p class="fst-italic">
+              O analista de testes sênior é especialista em garantir a qualidade e a eficiência dos produtos através de testes avançados e estratégias inovadoras.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>13 March 1995</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://new-portifolio-pi.vercel.app</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+47 991639581</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Blumenau, Brasil</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>28</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Ensino Superior Completo</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>kelvin.silva13@hotmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
             </div>
+            <p>
+              A qualidade de software é um requisito fundamental para o sucesso de qualquer produto digital. Ela engloba a capacidade de atender às necessidades dos usuários, ser confiável e livre de erros. Para garantir essa qualidade, é necessário um processo rigoroso de teste e verificação, desde a fase de desenvolvimento até a entrega final. Além disso, a qualidade de software está diretamente relacionada à usabilidade, desempenho e segurança do sistema, sendo essencial investir em práticas e metodologias que promovam a excelência em cada etapa do ciclo de vida do software. Uma abordagem dedicada à qualidade de software resulta em produtos mais confiáveis, satisfação dos usuários e uma vantagem competitiva no mercado tecnológico.
+            </p>
+          </div>
         </div>
-        <div class="navigation">
-            <a class="main-button" href="" lang="en">Download CV</a>
-            <a class="main-button" href="">Contatos</a>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Abaixo segue um resumo das minhas habilidades no GitHub.</p>
         </div>
-    </section>
-    <section class="main-section">
-        <h2 class="main-title -second">Skills</h2>
 
-        <div class="wrapper-skill">
-            <article class="skill-tec">
-                <img class="icon" src="/img/ico_html.png" alt="Logo html 5">
-                <div class="right">
-                    <h3 class="title">HTML</h3>
-                    <progress class="progress-bar" max="100" value="50">50%</progress>
-                </div>
-            </article>
+        <div class="row skills-content">
 
-            <article class="skill-tec">
-                <img class="icon" src="/img/ico_css3.png" alt="Logo html 5">
-                <div class="right">
-                    <h3 class="title">CSS</h3>
-                    <progress class="progress-bar" max="100" value="50">50%</progress>
-                </div>
-            </article>
-
-            <article class="skill-tec">
-                <img class="icon" src="/img/ico_js.png" alt="Logo html 5">
-                <div class="right">
-                    <h3 class="title">JS</h3>
-                    <progress class="progress-bar" max="100" value="50">50%</progress>
-                </div>
-            </article>
-            <article class="skill-tec">
-                <img class="icon" src="/img/ico_ts.png" alt="Logo TS">
-                <div class="right">
-                    <h3 class="title">TS</h3>
-                    <progress class="progress-bar" max="100" value="50">50%</progress>
-                </div>
-            </article>
-            <article class="skill-tec">
-                <img class="icon" src="/img/ico_ruby.png" alt="Logo Ruby">
-                <div class="right">
-                    <h3 class="title">Ruby</h3>
-                    <progress class="progress-bar" max="100" value="50">50%</progress>
-                </div>
-            </article>
-            <article class="skill-tec">
-                <img class="icon" src="/img/ico_cucumber.png" alt="Logo Ruby">
-                <div class="right">
-                    <h3 class="title">Cucumber</h3>
-                    <progress class="progress-bar" max="100" value="50">50%</progress>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section class="main-section -bgBlack -bdFirst">
-        <h2 class="main-title -second">Projetos</h2>
-        <div class="wrapper-card">
-            <a href="https://github.com/kelvinsilva1995?tab=repositories">
-                <figure class="card-project -blue">
-                    <img class=logo height="245px" width="221px" src="/img/appium.jpg" alt="Logo Projeto 1">
-                </figure>
-            </a>
-            <a href="https://github.com/kelvinsilva1995?tab=repositories">
-                <figure class="card-project -blue">
-                    <img class=logo height="245px" width="221px" src="/img/cypress.png" alt="Logo Projeto 2">
-                </figure>
-            </a>
-            <a href="https://github.com/kelvinsilva1995?tab=repositories">
-                <figure class="card-project -blue">
-                    <img class=logo height="245px" width="221px" src="/img/Rest-Asure.png" alt="Logo Projeto 3">
-                </figure>
-            </a>
-        </div>
-    </section>
-    <section class="main-section -bgSecond -bdBlack">
-        <h2 class="main-title -second">Sobre</h2>
-        <p class="main-description">Hoje, Sou Analista de Testes Automatizados pela Texoit,ja trabalhei em
-            diversas areas de TI. Fui almoxarife, e comecei na area de infra em TI e gosto de descobrir seu caminho conforme o
-            percorre.
-            Tambem gosto de buscar aprimorar seu conhecimento em stacks de testes automatizados, quando não esta
-            trabalhando esta estudando em busca de conhecimento.</p>
-        <section class="main-carousel">
-            <button class="button-arrow -left"><span class="content">Avançar</span></button>
-
-            <div class="items">
-                <div class="elements">
-                    <figure class="node-card">
-                        <figcaption class="title">2012</figcaption>
-                        <div class="logo">
-                            <img src="img/logovilla.png" alt="Logo Villa">
-                        </div>
-                    </figure>
-                    <figure class="node-card -first">
-                        <figcaption class="title">2014</figcaption>
-                        <div class="logo">
-                            <img src="img/logoambevtec.png" alt="Logo Hbsis">
-                        </div>
-                    </figure>
-                    <figure class="node-card -first">
-                        <figcaption class="title">2020</figcaption>
-                        <div class="logo">
-                            <img src="img/logo-texoit.png" alt="Logo texo">
-                        </div>
-                    </figure>
-                </div>
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
-            <button class="button-arrow -right"><span class="content">Voltar</span></button>
 
-        </section>
-    </section>
-    <form class="main-form">
-        <legend class="main-title -second">Contatos</legend>
+          </div>
 
-        <label class="main-label" for="name">Nome</label>
-        <input class="main-input" id="name" type="text">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-        <label class="main-label" for="email">Email</label>
-        <input class="main-input" id="email" type="email">
+            <div class="progress">
+              <span class="skill">Gherkin <i class="val">1%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
 
-        <label class="main-label" for="message">Mensagem</label>
-        <textarea class="main-input -textarea" id="message"></textarea>
+            <div class="progress">
+              <span class="skill">Java <i class="val">1%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
 
-        <button class="main-button -full" type="submit">Enviar</button>
-    </form>
+            <div class="progress">
+              <span class="skill">TypeScript <i class="val">1%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
 
-    <footer class="main-footer">
-        <a class="action" href="" target="_blank">
-            <img src="img/twitter.png" alt="">
-        </a>
-        <a class="action" href="https://www.youtube.com/channel/UCBJ6GnYUqvy-BLYihbmjMhQ" target="_blank">
-            <img src="img/youtube.png" alt="">
-        </a>
-        <a class="action" href="" target="_blank">
-            <img src="img/discord.png" alt="">
-        </a>
-    </footer>
+          </div>
 
-    <script src="js/components/main-carousel.js"></script>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>O meu resumo de carreira reflete a minha trajetória profissional até o momento, destacando as minhas principais realizações, habilidades e experiências relevantes. Sou um profissional dedicado e apaixonado pelo meu trabalho, sempre em busca de desafios que me permitam crescer e contribuir de forma significativa para o sucesso das organizações.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Kelvin Rafael da Silva</h4>
+              <p><em>Tenho 10 anos de experiência na área de Tecnologia da Informação, com foco em diferentes aspectos do setor. Por 5 anos, trabalho com Qualidade de Software, com ênfase em automação de testes. Também atuei por 2 anos em Infraestrutura e 3 anos em Suporte ao usuário na área de vendas.
+
+                Na área de Qualidade de Software, desenvolvi estratégias eficientes de testes automatizados para garantir a qualidade dos produtos. Em Infraestrutura, fui responsável por administrar sistemas e servidores. Já no Suporte de TI, trabalhei em colaboração com equipes de vendas, fornecendo suporte técnico especializado aos clientes.
+                
+                Ao longo da minha carreira, desenvolvi habilidades de comunicação, trabalho em equipe e resolução de problemas. Sou um profissional dedicado e adaptável, capaz de identificar oportunidades de melhoria e alcançar resultados positivos.
+                
+                Resumindo, tenho experiência de 10 anos em Tecnologia da Informação, com ênfase em Qualidade de Software, automação de testes, Infraestrutura e Suporte de TI na área de vendas. Estou preparado para enfrentar desafios e contribuir para o sucesso das organizações.</em></p>
+              <ul>
+                <li>Adolfo Bauler, Blumenau, SC</li>
+                <li>(47) 991639581</li>
+                <li>kelvin.silva13@hotmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Superior em Gestao da Tecnologia da Informação</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>Unicessumar, Blumenau, Sc</em></p>
+              <p>Um profissional menor em gestão da tecnologia da informação geralmente se refere a alguém que possui menos experiência ou habilidades em comparação com um profissional sênior ou superior na área. Pode ser alguém que está começando sua carreira em TI ou que ainda está em um estágio de desenvolvimento de suas habilidades e conhecimentos.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Sistemas da Informação, Indaial, Sc</h4>
+              <h5>2013 - 2016</h5>
+              <p><em>Uniasselvi, Indaial, Sc</em></p>
+              <p>Um profissional de Sistemas de Informação é responsável por planejar, desenvolver, implementar e gerenciar sistemas de informação em uma organização. Esses sistemas envolvem o uso de tecnologia da informação para coletar, armazenar, processar e disseminar informações relevantes para apoiar as operações e a tomada de decisões.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Analista de testes sênior</h4>
+              <h5>2023 - Present</h5>
+              <p><em>Joinvile, Santa Catarina, Sc </em></p>
+              <ul>
+                <li>Criação de Cenários em BDD (Behavior Driven Development) e automação end to end (Cucumber + Ruby, Rspec);</li>
+                <li>Criação de Cenários de testes automatizados de Api (Cypress);</li>
+                <li>Criação de Cenários de testes automatizados de End to End (Cypress);</li>
+                <li>Criação de testes de carga utilizando (Jmetter);</li>
+                <li>Criação de Testes automatizados Mobile (Ruby + Appium);</li>
+                <li>Criação de Testes com postam Docker e Portainer;</li>
+                <li>Gitlab para versionamento de código;</li>
+                <li>Redmine e Jira;</li>
+              </ul>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="resume-item">
+                <h4>Analista de testes</h4>
+                <h5>mai de 2018 - jul de 2020 · 2 anos 3 meses</h5>
+                <p><em>Blumenau, Santa Catarina, SC</em></p>
+                <ul>
+                  <li>Criação de testes manuais;</li>
+                  <li>Teste Mobile Com Espresso Android e Flutter Driver;</li>
+                  <li>Escrita de casos de em BDD (Behavior Driven Development);</li>
+                  <li>Gitlab para versionamento de código;</li>
+                  <li>Metodologia Agil</li>
+                  <li>Azure</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="resume-item">
+                <h4>Analista de suporte</h4>
+                <h5>dez de 2017 - ago de 2018 · 9 meses</h5>
+                <p><em>Blumenau, Santa Catarina, SC</em></p>
+                <p><em>Atua com suporte técnico em hardware e software para clientes internos e externos, responder a questões não só técnicas, mas também relativas a serviços, produtos, relacionamento com clientes, garantia entre outros...</em></p>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="resume-item">
+                <h4>Assistente de suporte de TI</h4>
+                <h5>jun de 2016 - dez de 2017 · 1 ano 7 meses</h5>
+                <p><em>Blumenau, Santa Catarina, SC</em></p>
+                <p><em>Prestar atendimento de suporte ao usuário final e clientes externos, registrar chamados telefônicos ou por e-mail, gerenciar incidentes, realizar implantação e treinamento, detectar defeitos, auxiliar na correção e manutenção de softwares, realizar visitas aos clientes, fornecer suporte em hardware e software, incluindo montagem, reparos e configurações de computadores, limpeza interna, manutenção básica de impressoras, instalação de sistemas operacionais e softwares, configuração de rede, acompanhar backup, manter a estrutura física de computadores e rede, apoiar a equipe em atividades relacionadas à tecnologia, homologar novas tecnologias e soluções em hardware e software, gerenciar equipamentos de TI, monitorar reparos e orçamentos com fornecedores, seguir as regras de inventário, organizar e receber equipamentos no estoque de TI.</em></p>
+              </div>
+            </div>
+            
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-item">
+              <h4>Estagiário de Suporte Técnico</h4>
+              <h5>ago de 2015 - jun de 2016 · 11 meses</h5>
+              <p><em>Blumenau, Santa Catarina, SC</em></p>
+              <p>O Estagiário de Suporte Técnico irá atuar prestando auxílio à área de Suporte Técnico, conhecendo toda a rotina para obter experiência e conhecimento da profissão. Suas responsabilidades incluem auxiliar no atendimento a clientes externos, tirar dúvidas e solucionar problemas, realizar treinamentos, criar manuais e procedimentos, acompanhar e assistir as atividades relacionadas ao departamento de suporte técnico, realizar atividades de instalação e manutenção de computadores, auxiliar no atendimento telefônico e cadastro de chamados, orientar e esclarecer dúvidas técnicas aos clientes quanto aos chamados, ministrar treinamentos presenciais e virtuais aos clientes, auxiliar na realização de testes.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-item">
+              <h4>Assistente de TI</h4>
+              <h5>jan de 2012 - jan de 2014 · 2 anos 1 mês</h5>
+              <p><em>Indaial, Santa Catarina, SC</em></p>
+              <p>Principais atividades: Atendimento aos usuários de telefonia e informática da empresa. Suporte técnico na implantação de novas estruturas e melhorias na área de Tecnologia da Informação. Atendimento a fornecedores de serviços de informática, sistema de impressão e telefonia. Resolução de problemas de software e hardware em todos os computadores alocados na empresa. Acompanhamento de solicitação de produtos relacionados à área da Tecnologia da Informação. Preparação e instalação de equipamentos para os usuários. Criação de novos usuários e e-mails para os colaboradores. Garantir os padrões de qualidade necessários. Cuidar da limpeza, organização, conservação e disciplina no seu local de trabalho, todos os móveis, máquinas, equipamentos e ferramentas utilizadas em suas atividades. Informar ao superior hierárquico eventuais irregularidades nos padrões técnicos ou rotinas do setor, garantindo o fluxo das tarefas. Executar as tarefas acima descritas, bem como as determinadas por seu superior imediato, também em outros setores de acordo com as necessidades de produção.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>
+            Aqui estão alguns dos meus projetos no GitHub, onde dedico meu tempo ao estudo contínuo de automação e qualidade de software.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Testes Mobile</li>
+              <li data-filter=".filter-card">Testes End-to-End</li>
+              <li data-filter=".filter-web">Testes Api</li>
+              <li data-filter=".filter-web">Certificações</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/codecept-appium.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/codecept-appium.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Rua Adolfo Bauler, 2182, Blumenau, Sc</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>kelvin.silva13@hotmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+47 99163 9581</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
