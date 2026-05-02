@@ -509,21 +509,20 @@ section { padding: 80px 0; overflow: hidden; }
 
 .about .profile-img-wrap {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .about .profile-img-wrap img {
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(var(--primary-rgb), 0.15), var(--shadow-lg);
   transition: var(--transition);
-  width: 100%;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
 }
-.about .profile-img-wrap::before {
-  content: "";
-  position: absolute;
-  inset: -6px;
-  border-radius: calc(var(--radius-lg) + 6px);
-  background: var(--gradient);
-  z-index: -1;
-  opacity: 0.3;
+.about .profile-img-wrap img:hover {
+  box-shadow: 0 0 0 10px rgba(var(--primary-rgb), 0.2), var(--shadow-lg);
+  transform: scale(1.02);
 }
 
 /* Stats */
