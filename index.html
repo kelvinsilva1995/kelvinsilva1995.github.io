@@ -67,13 +67,20 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>QA Sênior especialista em automação de testes e qualidade de software</h1>
-      <p>
-        <span class="typed"
-          data-typed-items="Aumento a confiabilidade das suas aplicações,Reduzo falhas em produção,Automatizo testes E2E · API · Mobile,Integro QA ao seu pipeline CI/CD"></span>
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up" data-aos-duration="800">
+      <div class="hero-badge">
+        <i class="bx bx-check-shield"></i> QA Engineer · Disponível para projetos
+      </div>
+      <h1>Kelvin <span>Rafael</span></h1>
+      <p class="hero-subtitle">
+        Reduzo falhas em produção e aumento a confiabilidade das suas aplicações com automação de testes eficiente.
       </p>
+      <div class="hero-divider"></div>
+      <div class="hero-typed-wrap">
+        <span class="typed"
+          data-typed-items="Testes E2E · Cypress · Selenium,Testes Mobile · Appium · Espresso,Testes de API · Postman · Cypress,Testes de Performance · JMeter,BDD · Cucumber · Ruby · Gherkin"></span>
+      </div>
       <div class="hero-btns">
         <a href="#contact" class="hero-btn hero-btn-primary">
           <i class="bx bx-send"></i> Falar sobre seu projeto
@@ -82,6 +89,9 @@
           <i class="bx bx-list-ul"></i> Ver serviços
         </a>
       </div>
+    </div>
+    <div class="hero-scroll">
+      <i class="bx bx-chevron-down"></i>
     </div>
   </section><!-- End Hero -->
 
@@ -98,7 +108,9 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Kelvin Rafael da Silva">
+            <div class="profile-img-wrap">
+              <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Kelvin Rafael da Silva">
+            </div>
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Kelvin Rafael — Analista de Testes Sênior</h3>
@@ -132,19 +144,19 @@
               </div>
             </div>
 
-            <!-- Stats strip -->
-            <div class="about-stats" data-aos="zoom-in">
-              <div class="about-stat-item">
-                <div class="stat-number">8+</div>
-                <div class="stat-label">Anos de Experiência</div>
+            <!-- Stats -->
+            <div class="about-stats" data-aos="fade-up">
+              <div class="stat-card">
+                <span class="stat-number">8+</span>
+                <div class="stat-label">Anos em TI</div>
               </div>
-              <div class="about-stat-item">
-                <div class="stat-number">15+</div>
-                <div class="stat-label">Projetos Entregues</div>
+              <div class="stat-card">
+                <span class="stat-number">15+</span>
+                <div class="stat-label">Projetos</div>
               </div>
-              <div class="about-stat-item">
-                <div class="stat-number">6+</div>
-                <div class="stat-label">Stacks de Teste</div>
+              <div class="stat-card">
+                <span class="stat-number">6+</span>
+                <div class="stat-label">Stacks</div>
               </div>
             </div>
           </div>
@@ -167,67 +179,49 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up">
             <div class="service-card">
-              <div class="service-icon">
-                <i class="bx bx-rocket"></i>
-              </div>
+              <div class="service-num">01</div>
               <h4>Automação do Zero</h4>
-              <p>Estruturo e implemento automação de testes do zero — arquitetura, boas práticas, padrões e primeira
-                suite completa rodando.</p>
+              <p>Estruturo e implemento automação de testes do zero — arquitetura, boas práticas, padrões e primeira suite completa rodando.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-card">
-              <div class="service-icon">
-                <i class="bx bx-refresh"></i>
-              </div>
-              <h4>Evolução de Projetos Existentes</h4>
-              <p>Refatoro, padronizo e melhoro suites já existentes com manutenção, estabilidade e escalabilidade como
-                foco.</p>
+              <div class="service-num">02</div>
+              <h4>Evolução de Projetos</h4>
+              <p>Refatoro, padronizo e melhoro suites existentes com foco em manutenção, estabilidade e escalabilidade a longo prazo.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-card">
-              <div class="service-icon">
-                <i class="bx bx-globe"></i>
-              </div>
+              <div class="service-num">03</div>
               <h4>Testes E2E &amp; API</h4>
-              <p>Testes end-to-end com Cypress, Selenium e Capybara. Testes de API com Cypress + Postman cobrindo todos
-                os contratos e cenários críticos.</p>
+              <p>Cobertura end-to-end com Cypress, Selenium e Capybara. Testes de API com Cypress + Postman em todos os contratos críticos.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up">
             <div class="service-card">
-              <div class="service-icon">
-                <i class="bx bx-mobile-alt"></i>
-              </div>
+              <div class="service-num">04</div>
               <h4>Testes Mobile</h4>
-              <p>Automação mobile com Appium, CodeceptJS e Espresso para Android, cobrindo fluxos críticos de
-                aplicativos nativos e híbridos.</p>
+              <p>Automação mobile com Appium, CodeceptJS e Espresso para Android — fluxos críticos em apps nativos e híbridos.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-card">
-              <div class="service-icon">
-                <i class="bx bx-bar-chart-alt-2"></i>
-              </div>
+              <div class="service-num">05</div>
               <h4>Testes de Performance</h4>
-              <p>Identifico gargalos e limites da aplicação antes que virem problema com JMeter — testes de carga,
-                stress e escalabilidade.</p>
+              <p>Identifico gargalos e limites antes que virem problema com JMeter — carga, stress e escalabilidade.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-card">
-              <div class="service-icon">
-                <i class="bx bx-git-branch"></i>
-              </div>
+              <div class="service-num">06</div>
               <h4>Integração CI/CD</h4>
-              <p>Integro os testes ao pipeline do GitLab CI/CD com Docker, garantindo execução automática e feedback
-                rápido a cada entrega.</p>
+              <p>Testes integrados ao pipeline GitLab CI/CD com Docker — execução automática e feedback rápido em cada entrega.</p>
             </div>
           </div>
 
@@ -300,15 +294,15 @@
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up">
             <div class="target-card">
-              <div class="target-icon"><i class="bx bx-rocket"></i></div>
+              <span class="target-num">01</span>
               <h4>Começando Automação</h4>
-              <p>Empresas que ainda fazem tudo manual e querem dar o primeiro passo na automação com estrutura sólida.</p>
+              <p>Empresas que ainda fazem tudo manual e querem dar o primeiro passo com estrutura sólida.</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="target-card">
-              <div class="target-icon"><i class="bx bx-wrench"></i></div>
+              <span class="target-num">02</span>
               <h4>Problemas de Manutenção</h4>
               <p>Times que já automatizam mas enfrentam testes frágeis, lentos ou difíceis de manter.</p>
             </div>
@@ -316,17 +310,17 @@
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="target-card">
-              <div class="target-icon"><i class="bx bx-shield-quarter"></i></div>
+              <span class="target-num">03</span>
               <h4>Sistemas Críticos</h4>
-              <p>Projetos financeiros, de vendas ou com integrações onde falhas em produção têm impacto direto no negócio.</p>
+              <p>Projetos financeiros ou com integrações onde falhas têm impacto direto no negócio.</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="target-card">
-              <div class="target-icon"><i class="bx bx-trending-up"></i></div>
-              <h4>Escalabilidade e Qualidade</h4>
-              <p>Projetos que precisam crescer sem perder estabilidade, com QA integrado ao processo de desenvolvimento.</p>
+              <span class="target-num">04</span>
+              <h4>Escala com Qualidade</h4>
+              <p>Projetos que precisam crescer sem perder estabilidade, com QA integrado ao processo.</p>
             </div>
           </div>
 
