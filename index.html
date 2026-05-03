@@ -953,17 +953,15 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://formspree.io/f/xpqbpwlk" method="post" role="form" class="php-email-form">
+            <form id="contact-form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Seu Nome</label>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome completo"
-                    required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome completo" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="email">Seu E-mail</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="seu@email.com"
-                    required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="seu@email.com" required>
                 </div>
               </div>
               <div class="form-group">
@@ -977,14 +975,41 @@
                   placeholder="Conte um pouco sobre seu projeto e o que precisa..." required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Enviando...</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Mensagem enviada! Entrarei em contato em breve.</div>
+                <div class="loading" id="form-loading" style="display:none">Enviando...</div>
+                <div class="error-message" id="form-error" style="display:none">Erro ao enviar. Tente novamente.</div>
+                <div class="sent-message" id="form-success" style="display:none">Mensagem enviada! Entrarei em contato em breve.</div>
               </div>
               <div class="text-center">
                 <button type="submit"><i class="bx bx-send me-2"></i>Enviar Mensagem</button>
               </div>
             </form>
+            <script>
+              document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var loading = document.getElementById('form-loading');
+                var error = document.getElementById('form-error');
+                var success = document.getElementById('form-success');
+                loading.style.display = 'block';
+                error.style.display = 'none';
+                success.style.display = 'none';
+                fetch('https://formspree.io/f/xpqbpwlk', {
+                  method: 'POST',
+                  body: new FormData(this),
+                  headers: { 'Accept': 'application/json' }
+                }).then(function(res) {
+                  loading.style.display = 'none';
+                  if (res.ok) {
+                    success.style.display = 'block';
+                    document.getElementById('contact-form').reset();
+                  } else {
+                    error.style.display = 'block';
+                  }
+                }).catch(function() {
+                  loading.style.display = 'none';
+                  error.style.display = 'block';
+                });
+              });
+            </script>
           </div>
 
         </div>
