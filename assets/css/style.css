@@ -1054,7 +1054,8 @@ section { padding: 80px 0; overflow: hidden; }
 .contact .info .address:hover i,
 .contact .info .phone:hover i { background: var(--gradient); color: #fff; }
 
-.contact .php-email-form {
+.contact .php-email-form,
+.contact .contact-form-custom {
   width: 100%;
   padding: 32px;
   background: var(--bg-card);
@@ -1062,15 +1063,18 @@ section { padding: 80px 0; overflow: hidden; }
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-color);
 }
-.contact .php-email-form .form-group { padding-bottom: 8px; margin-bottom: 16px; }
-.contact .php-email-form .validate { display: none; color: red; font-size: 13px; }
-.contact .php-email-form .error-message { display: none; color: #fff; background: #ef4444; text-align: left; padding: 14px; font-weight: 600; border-radius: var(--radius-sm); }
-.contact .php-email-form .sent-message { display: none; color: #fff; background: #10b981; text-align: center; padding: 14px; font-weight: 600; border-radius: var(--radius-sm); }
-.contact .php-email-form .loading { display: none; background: #fff; text-align: center; padding: 14px; }
-.contact .php-email-form .loading:before { content: ""; display: inline-block; border-radius: 50%; width: 22px; height: 22px; margin: 0 10px -6px 0; border: 3px solid #10b981; border-top-color: #eee; animation: animate-loading 1s linear infinite; }
-.contact .php-email-form label { padding-bottom: 6px; font-weight: 600; color: var(--text-heading-light); font-size: 13.5px; display: block; }
+.contact .php-email-form .form-group,
+.contact .contact-form-custom .form-group { padding-bottom: 8px; margin-bottom: 16px; }
+.contact .contact-form-custom .error-message { color: #fff; background: #ef4444; text-align: left; padding: 14px; font-weight: 600; border-radius: var(--radius-sm); }
+.contact .contact-form-custom .sent-message { color: #fff; background: #10b981; text-align: center; padding: 14px; font-weight: 600; border-radius: var(--radius-sm); }
+.contact .contact-form-custom .loading { background: #fff; text-align: center; padding: 14px; }
+.contact .contact-form-custom .loading:before { content: ""; display: inline-block; border-radius: 50%; width: 22px; height: 22px; margin: 0 10px -6px 0; border: 3px solid #10b981; border-top-color: #eee; animation: animate-loading 1s linear infinite; }
+.contact .php-email-form label,
+.contact .contact-form-custom label { padding-bottom: 6px; font-weight: 600; color: var(--text-heading-light); font-size: 13.5px; display: block; }
 .contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .php-email-form textarea,
+.contact .contact-form-custom input,
+.contact .contact-form-custom textarea {
   border-radius: var(--radius-sm);
   box-shadow: none;
   font-size: 14px;
@@ -1079,14 +1083,19 @@ section { padding: 80px 0; overflow: hidden; }
   width: 100%;
 }
 .contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .php-email-form textarea:focus,
+.contact .contact-form-custom input:focus,
+.contact .contact-form-custom textarea:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(var(--primary-rgb),0.1);
   outline: none;
 }
-.contact .php-email-form input { height: 44px; padding: 0 14px; }
-.contact .php-email-form textarea { padding: 12px 14px; }
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form input,
+.contact .contact-form-custom input { height: 44px; padding: 0 14px; }
+.contact .php-email-form textarea,
+.contact .contact-form-custom textarea { padding: 12px 14px; }
+.contact .php-email-form button[type="submit"],
+.contact .contact-form-custom button[type="submit"] {
   background: var(--gradient);
   border: 0;
   padding: 12px 32px;
@@ -1100,7 +1109,8 @@ section { padding: 80px 0; overflow: hidden; }
   letter-spacing: 0.3px;
   cursor: pointer;
 }
-.contact .php-email-form button[type="submit"]:hover {
+.contact .php-email-form button[type="submit"]:hover,
+.contact .contact-form-custom button[type="submit"]:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(var(--primary-rgb),0.4);
 }
