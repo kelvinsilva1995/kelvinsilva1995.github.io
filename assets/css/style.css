@@ -264,8 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/hero-bg.jpg") center center no-repeat;
-  background-size: cover;
+  background: var(--dark-900);
   position: relative;
   display: flex;
   align-items: center;
